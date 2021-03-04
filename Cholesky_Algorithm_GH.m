@@ -19,7 +19,7 @@ q = potential(x);
 % Cutoff function:
 chi = x<=a+h & x>=-a-h;
 % Define lattice in C:
-L = build_lattice(-21-8i, 21+2.5i, 10000);
+L = build_lattice(-21-8i, 21+2.5i, 2000);
 
 %% Define matrix K_n:
 abab = bsxfun(@minus,midpoints', midpoints);
